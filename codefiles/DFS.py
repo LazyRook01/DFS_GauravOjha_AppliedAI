@@ -10,7 +10,7 @@ def page_recursive():
 
     # Add credit line
     st.markdown("### Created by Gaurav Ojha (VisFac, Applied AI) based on https://www.youtube.com/watch?v=PMMc4VsIacU")
-    st,write("The code files and the input txt files can be found at: https://github.com/LazyRook01/DFS_GauravOjha_AppliedAI/tree/main/codefiles")
+    
 
     st.write("Upload a text file that contains JSON-like adjacency list format.")
     # Upload a text file
