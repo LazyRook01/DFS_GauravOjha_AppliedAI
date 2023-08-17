@@ -16,7 +16,7 @@ you can run the implementations mentioned here at : https://appliedai-dfs-in-det
 - It is very muck like a brute force method.
 - Unlike BFS which uses Queue (FIFO), DFS uses the stack data structure (LIFO: Last In First Out)
 
-![4060037762be07a06812e22f62106b7d.png](4060037762be07a06812e22f62106b7d.png)
+![4060037762be07a06812e22f62106b7d.png](_resources/4060037762be07a06812e22f62106b7d.png)
 
 ## Overview
 1. What is graph traversal?
