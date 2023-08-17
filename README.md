@@ -2,9 +2,7 @@
 title: Applied AI (DFS)
 updated: 2023-08-17 19:48:41Z
 created: 2023-08-17 17:17:19Z
-latitude: 19.07598370
-longitude: 72.87765590
-altitude: 0.0000
+author: Gaurav Ojha
 ---
 
 # Depth First Search (DFS)
@@ -51,7 +49,7 @@ In the process of Depth-First Search (DFS) on a graph, when we return to the sta
 Recursion is a programming technique where a function calls itself as part of its own execution. In other words, a recursive function is a function that solves a problem by breaking it down into smaller, similar sub-problems and solving each sub-problem using the same function.
 
 **Problem**
-![bc0aefd1428f58875d25c052aaa29612.png](resources/bc0aefd1428f58875d25c052aaa29612.png)
+![bc0aefd1428f58875d25c052aaa29612.png](bc0aefd1428f58875d25c052aaa29612.png)
 Valid order for graph traversal using depth-first search (DFS) -
 dfs(G,0): 0 1 3 4 2
 
