@@ -109,6 +109,60 @@ Let's break it down step by step:
 7. `dfs(G, w)`: This line recursively calls the DFS function on the neighbor vertex `w`. This means that the traversal continues from `w`, exploring its neighbors in a similar manner. By doing this, the traversal can explore deeper into the graph.
 
 Putting it all together, this code implements a depth-first search traversal of a graph. It starts from a given vertex, visits it, marks it as visited, and then explores its neighbors recursively, making sure not to revisit vertices that have already been marked as visited. This process continues until all reachable vertices have been visited.
+
+**Now, let's look at hwo would one implement this using python code:**
+```python
+graph={
+    '5':['3','7'],
+    '3':['2','4'],
+    '7':['8'],
+    '2':[],
+    '4':['8'],
+    '8':[]
+}
+visited=set()
+def dfs(visited,graph,node):
+    if node not in visited:
+        print (node)
+        visited.add(node)
+        for neighbour in graph[node]:
+            dfs(visited,graph,neighbour)
+print("Following is the Depth First Search")
+dfs(visited,graph,'5')
+```
+Let's break down the code step by step to understand what it does:
+
+1. **Graph Representation:**
+   The graph is represented as a dictionary where the keys are nodes and the values are lists of neighboring nodes. Each node is associated with a list of its neighboring nodes. For example, `'5': ['3', '7']` means that node '5' has neighbors '3' and '7'.
+
+2. **Visited Set:**
+   The `visited` set is used to keep track of nodes that have already been visited during the DFS traversal. This is done to prevent visiting the same node multiple times and to avoid entering into infinite loops in case of cyclic graphs.
+
+3. **DFS Function:**
+   The `dfs` function takes three parameters: `visited` set, `graph`, and `node`. It is a recursive function that performs the DFS traversal starting from the given `node`.
+
+   - If the `node` is not in the `visited` set, it means the node has not been visited yet. So, it's printed, added to the `visited` set, and its neighbors are explored.
+   - For each neighbor of the current node, the `dfs` function is called recursively to traverse through its neighbors.
+
+4. **DFS Traversal:**
+   The final part of the code starts the DFS traversal by calling the `dfs` function with the initial node '5' as the starting point. This is the entry point for the traversal.
+
+5. **Output:**
+   The output of the code will be the nodes visited in the order they are encountered during the DFS traversal. Since the traversal starts at node '5', and the order of traversal is determined by the recursive nature of DFS, the output will look something like this:
+
+   ```
+   Following is the Depth First Search
+   5
+   3
+   2
+   4
+   8
+   7
+   ```
+
+   This output represents the nodes visited in depth-first order starting from node '5' and exploring its neighbors and their neighbors in a recursive manner.
+
+In summary, the code performs a Depth First Search traversal on the given graph and prints out the nodes in the order they are visited. The `visited` set is used to keep track of visited nodes and avoid revisiting them.
 ***
 ## 3.2 DFS Implementation (Iterative)
 
