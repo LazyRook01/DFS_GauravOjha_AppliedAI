@@ -25,7 +25,7 @@ you can run the implementations mentioned here at : https://appliedai-dfs-in-det
 4. DFS Application
 ***
 ## 1. What is Graph Traversal?
-![bc0aefd1428f58875d25c052aaa29612.png](bc0aefd1428f58875d25c052aaa29612.png)
+![bc0aefd1428f58875d25c052aaa29612.png](_resources/bc0aefd1428f58875d25c052aaa29612.png)
 
 - you start at a single vertex
 - then find a way to visit every other vertex within the graph
@@ -35,7 +35,7 @@ you can run the implementations mentioned here at : https://appliedai-dfs-in-det
 
 - You start at a vertex and ensure you visit every other vertex within the graph.
 
-![bc0aefd1428f58875d25c052aaa29612.png](bc0aefd1428f58875d25c052aaa29612.png)
+![bc0aefd1428f58875d25c052aaa29612.png](_resources/bc0aefd1428f58875d25c052aaa29612.png)
 Taking Node 0 as the starting point
 Order 1: 0 1 3 2 4
 Order 2: 0 2  3 4 1
@@ -51,7 +51,7 @@ In the process of Depth-First Search (DFS) on a graph, when we return to the sta
 Recursion is a programming technique where a function calls itself as part of its own execution. In other words, a recursive function is a function that solves a problem by breaking it down into smaller, similar sub-problems and solving each sub-problem using the same function.
 
 **Problem**
-![bc0aefd1428f58875d25c052aaa29612.png](bc0aefd1428f58875d25c052aaa29612.png)
+![bc0aefd1428f58875d25c052aaa29612.png](_resources/bc0aefd1428f58875d25c052aaa29612.png)
 Valid order for graph traversal using depth-first search (DFS) -
 dfs(G,0): 0 1 3 4 2
 
@@ -150,7 +150,7 @@ This iterative approach simulates the depth-first traversal of the graph by expl
 
 **Problem:** Traverse the graph using DFS (Iterative)
 
-![bc0aefd1428f58875d25c052aaa29612.png](../_resources/bc0aefd1428f58875d25c052aaa29612.png)
+![bc0aefd1428f58875d25c052aaa29612.png](_resources/bc0aefd1428f58875d25c052aaa29612.png)
 
 **Step 1**
 - Starting Node: 0
@@ -159,7 +159,7 @@ This iterative approach simulates the depth-first traversal of the graph by expl
 - Marked: False
 - Visited: [0]
 - Order: ==0==
-![6b99f8d9b578b642b1b6310b9db5597e.png](6b99f8d9b578b642b1b6310b9db5597e.png)
+![6b99f8d9b578b642b1b6310b9db5597e.png](_resources/6b99f8d9b578b642b1b6310b9db5597e.png)
 
 **Step 2**
 - Neighbors of node 0: 2	3	1
@@ -169,7 +169,7 @@ This iterative approach simulates the depth-first traversal of the graph by expl
 - Marked: False
 - Visited: [1]
 - Order: ==0	1==
-![03d45fcf968c12922ee131d8e3bed91c.png](03d45fcf968c12922ee131d8e3bed91c.png)
+![03d45fcf968c12922ee131d8e3bed91c.png](_resources/03d45fcf968c12922ee131d8e3bed91c.png)
 **Step 3**
 - neighbors of node 1: 0	3
 - unvisited: 3
@@ -178,7 +178,7 @@ This iterative approach simulates the depth-first traversal of the graph by expl
 - Marked: False
 - Visited: [3]
 - Order: ==0 1 3==
-![65643790747aa5cac69e00c4fbce581d.png](65643790747aa5cac69e00c4fbce581d.png)
+![65643790747aa5cac69e00c4fbce581d.png](_resources/65643790747aa5cac69e00c4fbce581d.png)
 
 **Step 4**
 - neighbors of node 3: 0 1 4 2
@@ -188,7 +188,7 @@ This iterative approach simulates the depth-first traversal of the graph by expl
 - Marked: False
 - visited: [2]
 - Order: ==0 1 3 2==
-![e077e5b29cb82800625bbafcc3c3605f.png](e077e5b29cb82800625bbafcc3c3605f.png)
+![e077e5b29cb82800625bbafcc3c3605f.png](_resources/e077e5b29cb82800625bbafcc3c3605f.png)
 
 **Step 5**
 - neighbors of node 2: 0 3
@@ -198,7 +198,7 @@ This iterative approach simulates the depth-first traversal of the graph by expl
 - Marked: False
 - visited: [4]
 - order: ==0 1 3 2 4==
-![1749a9c7042a0269519568ca5b3e1742.png](1749a9c7042a0269519568ca5b3e1742.png)
+![1749a9c7042a0269519568ca5b3e1742.png](_resources/1749a9c7042a0269519568ca5b3e1742.png)
 
 **Now we see that all the nodes have been visited. But the search won't terminate is the stack is still non empty**
 
