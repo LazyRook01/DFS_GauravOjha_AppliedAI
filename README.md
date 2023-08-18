@@ -273,4 +273,24 @@ This iterative approach simulates the depth-first traversal of the graph by expl
 - order: ==0 1 3 2 4==
 
 **Now, our stack is empty, therefore the search terminates and our final order of visiting all the nodes is: ==0 1 3 2 4==**
+***
+## What is the difference between iterative and recursive approaches?
+| Aspect            | Recursive Approach                   | Iterative Approach                    |
+|-------------------|--------------------------------------|---------------------------------------|
+| Control Flow      | Function calls solve smaller instances| Loops repeatedly execute instructions|
+|                   | of the same problem.                | until a condition is met.            |
+| Base Case         | Requires a base case to stop         | Depends on loop termination condition|
+|                   | recursion and prevent infinite loops.|                                       |
+| Memory Usage      | Involves call stack for function     | Uses less memory due to no need for  |
+|                   | calls, potentially higher memory    | call stack for function calls.       |
+|                   | consumption.                         |                                       |
+| Efficiency        | Can be less efficient due to         | Can be more efficient in terms of    |
+|                   | function call overhead and stack     | both time and space complexity,      |
+|                   | management.                          | especially for simple problems.      |
+| Code Readability | Can lead to elegant and concise     | Provides explicit control over the   |
+|                   | solutions for certain problems.      | flow, often clearer for beginners.   |
+| Applicability     | Suited for problems with a recursive | Suited for problems that can be      |
+|                   | structure, where subproblems are     | solved using sequential steps or     |
+|                   | similar to the main problem.         | iterations.                           |
+
 
