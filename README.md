@@ -110,7 +110,7 @@ Let's break it down step by step:
 
 Putting it all together, this code implements a depth-first search traversal of a graph. It starts from a given vertex, visits it, marks it as visited, and then explores its neighbors recursively, making sure not to revisit vertices that have already been marked as visited. This process continues until all reachable vertices have been visited.
 
-**Now, let's look at hwo would one implement this using python code:**
+**Now, let's look at how can one implement this using python code:**
 ```python
 graph = {
 
