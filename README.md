@@ -282,6 +282,7 @@ This iterative approach simulates the depth-first traversal of the graph by expl
 **Now, our stack is empty, therefore the search terminates and our final order of visiting all the nodes is: ==0 1 3 2 4==**
 ***
 ## Basic DFS Implementation:
+```
 graph = {
     '5': ['3', '7'],
     '3': ['5', '2', '4'],
@@ -299,6 +300,7 @@ def dfs(visited,graph,node):
             dfs(visited,graph,neighbour)
 print("Following is the Depth First Search")
 dfs(visited,graph,'3')
+```
 
 ***
 ## What is the difference between iterative and recursive approaches?
